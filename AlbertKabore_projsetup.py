@@ -49,7 +49,7 @@ def main():
     # Print byline from imported module
     print(f"Byline: {AlbertKabore_utils}")
     # Call function 1 to create folders for a range (e.g. years)
-    create_folders_for_range(start_year=2020, end_year=2025)
+    create_folders_for_range(start_year=2021, end_year=2024)
 
     # Call function 2 to create folders given a list
     folder_names = ['data-csv', 'data-excel', 'data-json']
@@ -62,22 +62,11 @@ def main():
 
     # Call function 4 to create folders periodically using while
     duration_secs = 5  # duration in seconds
-    create_folders_periodically(duration_secs)
+    create_folders_periodically(duration=5)
 
-    # Add options e.g., to force lowercase and remove spaces 
-    # to one or more of your functions (e.g. function 2) 
-    # Call your function and test these options
-    regions = [
-      "North America", 
-      "South America", 
-      "Europe", 
-      "Asia", 
-      "Africa", 
-      "Oceania", 
-      "Middle East"
-    ]
     create_folders_from_list(regions, to_lowercase=True, remove_spaces=True)
 
-if __name__ == '__main__':
-        main()
+
+if __name__ == "__main__":
+    main()
 
