@@ -49,7 +49,7 @@ def main():
     # Print byline from imported module
     print(f"Byline: {AlbertKabore_utils}")
     # Call function 1 to create folders for a range (e.g. years)
-    create_folders_for_range(start_year=2021, end_year=2024)
+    create_folders_for_range(start_year=2020, end_year=2024)
 
     # Call function 2 to create folders given a list
     folder_names = ['data-csv', 'data-excel', 'data-json']
